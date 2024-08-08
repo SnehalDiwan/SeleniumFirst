@@ -10,6 +10,8 @@ public class App {
         driver.navigate().to("https://www.google.com/");
         Thread.sleep(3000);
         driver.navigate().to("https://www.flipkart.com/");
+        String url=driver.getCurrentUrl();
+        System.out.println(url);
         Thread.sleep(3000);
         driver.manage().window().maximize();
         String title=driver.getTitle();
