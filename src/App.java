@@ -23,6 +23,8 @@ public class App {
         }else{
             System.out.println("navigated to wrong webpage");
         }
+
+        System.out.println("i m trying waits");
         
         driver.navigate().back();
         Thread.sleep(2000);
