@@ -10,6 +10,6 @@ public class XpathPractice {
         driver.findElement(By.xpath(("//input[@id='email']"))).sendKeys("Snehal");
         driver.findElement(By.xpath(("//input[@id='pass']"))).sendKeys("pass@123");
         driver.findElement(By.xpath(("//button[@type='submit']"))).click();;
-      
+        driver.findElement(By.xpath("//a[contains(text(),'Forgotten')]")).click();
     }
 }
