@@ -14,7 +14,13 @@ public class ListBox {
         Thread.sleep(2000);
         WebElement month = driver.findElement(By.xpath("//select[@id='month']"));
          Select s= new Select(month);
-         s.selectByIndex(1);
+        //  s.selectByIndex(1);
+        Thread.sleep(2000);
+         s.selectByVisibleText("Oct");
+         WebElement year=driver.findElement((By.xpath("//select[@id='year']")));
+         Select s1= new Select(year);
+         Thread.sleep(2000);
+         s1.selectByValue("2023");
          driver.close();
     }
 }
