@@ -30,10 +30,18 @@ public class SauceDemo {
         
         s.selectByIndex(2);
         Thread.sleep(2000);
-        List<WebElement> items = driver.findElements(By.xpath("//div[@class='inventory_item']"));
-        for(WebElement item : items){
-            System.out.println(items);
+        String expText="Sauce Labs Bike Light";
+        List<WebElement> list = driver.findElements(By.xpath("//div[@class='inventory_item_label']/a"));
+        for(WebElement item : list){
+            String actText=item.getText();
+            if(actText.startsWith(expText)){
+                System.out.println("came here");
+                item.click();
+
+            }
+            // System.out.println(item.getText());
         }
+     
       
 
         driver.close();
