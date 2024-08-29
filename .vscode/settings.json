@@ -84,5 +84,6 @@
         "c:\\Users\\shubh\\Downloads\\selenium-java-4.23.0\\j2objc-annotations-3.0.0.jar",
         "c:\\Users\\shubh\\Downloads\\selenium-java-4.23.0\\j2objc-annotations-3.0.0-sources.jar",
         "c:\\Users\\shubh\\Downloads\\selenium-java-4.23.0\\jsr305-3.0.2-sources.jar"
-    ]
+    ],
+    "java.compile.nullAnalysis.mode": "disabled"
 }
