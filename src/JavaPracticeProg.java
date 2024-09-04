@@ -1,6 +1,8 @@
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
+// anagragrm
+
 public class JavaPracticeProg {
     public static void main(String[] args) {
         String str1="now";
