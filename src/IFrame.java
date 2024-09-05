@@ -10,6 +10,7 @@ public class IFrame {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\shubh\\Documents\\SnehalCoding\\Selenium\\SeleniumFirst\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://demoqa.com/frames");
+        driver.manage().window().maximize();
         
         driver.switchTo().frame("frame1");
         WebElement text = driver.findElement(By.id("sampleHeading"));
