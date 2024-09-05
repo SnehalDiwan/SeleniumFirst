@@ -11,6 +11,11 @@ public static void main(String[] args) {
 
     int [] arr2={1,2,8,9,3,7,5};
         //System.out.println(contains(arr2,7));
+        int removeIndex=1;
+        for(int i=removeIndex; i<arr2.length-1; i++){
+            arr2[i]=arr2[i+1];
+        }
+        System.out.println(Arrays.toString(arr2));
         int sum=0;
         for( int  i=0; i<arr2.length; i++){
             sum = sum+ arr2[i];
